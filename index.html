@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="info">
+        <div class="currentscore">Score: <span class="result">0</span>
+        </div>
+        <button class="button-33">Restart game</button>
+
+        <div class="score">Last results:
+            <div class="textcols">
+                <div class="textcols-item">
+                    1.
+                </div>
+                <div class="textcols-item ">
+                    <div class="bestscore">
+                    <div id="org_div1"></div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+            <footer class="footer-container">
+                <div class="container"> 
+                <div class="footer-info">
+                    <div class="footer-details"> © </div>
+                    <div class="footer-details">2022 </div>
+                    <a class="footer-details" target="_blank" href="https://github.com/KwiecienO"> github</a>
+                </div> 
+                <a class="school-logo" target="_blank" href=" https://rs.school/js-stage0/"></a>
+            
+                </div>
+            </footer> 
+
+        
+    </div>
+    <section class="memory-game">
+        <div class="memory-card" data-img="creeper">
+            <img class="front-face" src="img/3D-Creeper-icon.png" alt="Creeper">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="3dgrass">
+            <img class="front-face" src="img/3D-Grass-icon.png" alt="Grass 3D">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="3dskeleton">
+            <img class="front-face" src="img/3D-Skeleton-icon.png" alt="Skeleton">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="crafttable">
+            <img class="front-face" src="img/Crafting-Table-icon.png" alt="Craft table">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="dimondaxe">
+            <img class="front-face" src="img/Diamond-Axe-icon.png" alt="Diamond Axe">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="dimondsword">
+            <img class="front-face" src="img/Diamond-Sword-icon.png" alt="Diamond Sword">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="enderman">
+            <img class="front-face" src="img/Enderman-icon.png" alt="Enderman">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="ghast">
+            <img class="front-face" src="img/Ghast-icon.png" alt="Ghast">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="goldshovel">
+            <img class="front-face" src="img/Gold-Shovel-icon.png" alt="Gold Shovel">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="grass">
+            <img class="front-face" src="img/Grass-icon.png" alt="Grass">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="stone">
+            <img class="front-face" src="img/Stone-Hoe-icon.png" alt="Stone">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="tnt">
+            <img class="front-face" src="img/Tnt-icon.png" alt="Tnt">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="creeper">
+            <img class="front-face" src="img/3D-Creeper-icon.png" alt="Creeper">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="3dgrass">
+            <img class="front-face" src="img/3D-Grass-icon.png" alt="Grass 3D">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="3dskeleton">
+            <img class="front-face" src="img/3D-Skeleton-icon.png" alt="Skeleton">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="crafttable">
+            <img class="front-face" src="img/Crafting-Table-icon.png" alt="Craft table">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="dimondaxe">
+            <img class="front-face" src="img/Diamond-Axe-icon.png" alt="Diamond Axe">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="dimondsword">
+            <img class="front-face" src="img/Diamond-Sword-icon.png" alt="Diamond Sword">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="enderman">
+            <img class="front-face" src="img/Enderman-icon.png" alt="Enderman">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="ghast">
+            <img class="front-face" src="img/Ghast-icon.png" alt="Ghast">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="goldshovel">
+            <img class="front-face" src="img/Gold-Shovel-icon.png" alt="Gold Shovel">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="grass">
+            <img class="front-face" src="img/Grass-icon.png" alt="Grass">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="stone">
+            <img class="front-face" src="img/Stone-Hoe-icon.png" alt="Stone">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+        <div class="memory-card" data-img="tnt">
+            <img class="front-face" src="img/Tnt-icon.png" alt="Tnt">
+            <img class="back-face" src="img/Chest-icon.png" alt="Card">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
